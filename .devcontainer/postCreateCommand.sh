@@ -9,17 +9,18 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 
 echo '[INFO] Setting up git aliases...'
 git config --global alias.lol "log --oneline --graph --decorate --all"
+echo '[INFO] Don't forget to set your user name and email in the git config!'
 # Prompt for name
-echo "Please enter your name:"
-read name
+# echo "Please enter your name:"
+# read name
 
 # Prompt for email
-echo "Please enter your email:"
-read email
+# echo "Please enter your email:"
+# read email
 
 # Set the values in git config
-git config --global user.name "$name"
-git config --global user.email "$email"
+# git config --global user.name "$name"
+# git config --global user.email "$email"
 
 echo "Git config has been set with the following values:"
 echo "Name: $(git config --global user.name)"
