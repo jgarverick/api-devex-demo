@@ -1,4 +1,6 @@
-echo '[INFO] Don't forget to set your user name and email in the git config!'
+#!/bin/bash
+
+echo "[INFO] Don't forget to set your user name and email in the git config!"
 # Prompt for name
 echo "Please enter your name:"
 read name
