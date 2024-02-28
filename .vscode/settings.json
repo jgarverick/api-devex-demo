@@ -1,0 +1,11 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/c734c4ce-b883-4ee5-8189-8e847d568f63/resourceGroups/rg-api-devex-demo/providers/Microsoft.Web/sites/app-devex-demo-grpc",
+    "appService.deploySubpath": "",
+    "azureFunctions.deploySubpath": "src/graphql/src",
+    "azureFunctions.postDeployTask": "npm install (functions)",
+    "azureFunctions.projectLanguage": "JavaScript",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.projectSubpath": "src/graphql/src",
+    "azureFunctions.preDeployTask": "npm prune (functions)"
+}
