@@ -18,6 +18,7 @@ namespace function
         {
             _logger = logger;
             _blobServiceClient = blobServiceClient;
+            //_blobServiceClient.CreateBlobContainer("your-container-name");
         }
 
         [Function("PushFileUpdates")]
@@ -58,6 +59,7 @@ namespace function
         private void UploadFileToStorageAccount(string containerName, string fileName, string fileContent)
         {
             BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
+            
             BlobClient blobClient = containerClient.GetBlobClient(fileName);
 
             using (MemoryStream stream = new MemoryStream(Encoding.UTF8.GetBytes(fileContent)))
